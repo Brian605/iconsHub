@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:title="@string/contact"
+     android:id="@+id/menu_contact"
+     android:icon="@drawable/ic_baseline_contact_phone_24"/>
+
+    <item
+        android:title="@string/social"
+        android:id="@+id/menu_social"
+        android:icon="@drawable/ic_baseline_connect_without_contact_24"/>
+
+    <item
+        android:title="@string/payments"
+        android:id="@+id/menu_payment"
+        android:icon="@drawable/ic_baseline_mobile_screen_share_24"/>
+
+    <item
+        android:title="@string/help"
+        android:id="@+id/menu_help"
+        android:icon="@drawable/ic_baseline_help_outline_24"/>
+
+</menu>

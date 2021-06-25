@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item
+     android:title="@string/co_working_space"
+     android:id="@+id/menu_co_working"/>
+    <item
+        android:title="@string/innovation"
+        android:id="@+id/menu_innovation"/>
+    <item
+        android:title="@string/plans"
+        android:id="@+id/menu_plans"/>
+    <item
+        android:title="@string/account"
+        android:id="@+id/menu_account"/>
+    <item
+        android:title="@string/gallery"
+        android:id="@+id/menu_gallery"/>
+    <item
+        android:title="@string/about_us"
+        android:id="@+id/menu_about"/>
+
+
+</menu>

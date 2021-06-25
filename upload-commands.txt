@@ -1,0 +1,1 @@
+firebase appdistribution:distribute app-debug.apk --app 1:708520689612:android:fae742f4f3a7efa26aa769 --release-notes "Icons Hub Version 1.0 debug 2" --testers "testers-list.txt" --debug

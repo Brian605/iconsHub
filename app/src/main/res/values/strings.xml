@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">IconsHub</string>
+    <string name="iconshub_logo">iconsHub logo</string>
+    <string name="slider_image">Slider Image</string>
+    <string name="slider_1_description">An Open Space for Researchers , Innovators ,Consultants and Students</string>
+    <string name="subscribe">Subscribe</string>
+    <string name="slider_2_description">We have a Unique space for Learning and Development</string>
+    <string name="slider_3_description">Simple, Intuitive and Expertly Crafted!</string>
+    <string name="co_working_space">Co-Working Space</string>
+    <string name="co_working_description">We offer co-working space for entrepreneurs, start-ups and personal space</string>
+    <string name="high_speed_internet">High Speed Internet</string>
+    <string name="hight_speed_net_desc">We at iCON Hub offers services with high speeds of internet for your research, conference calls and innovation</string>
+    <string name="events_and_networking">Events and Networking</string>
+    <string name="events_desc">We offer venue for events and platforms for researchers to collaborate</string>
+    <string name="snacks_shop">Snacks Shop</string>
+    <string name="snacks_desc">Feel free to Drop in for a few snacks on your way home</string>
+    <string name="garden_and_recreation">Garden and Recreation</string>
+    <string name="garden_desc">Let Go of yourself with our cool and Refreshing Garden, Or just take a picture and save the memory</string>
+    <string name="board_room">Board Room</string>
+    <string name="board_description">An All-Equipped BoardRoom Is Just The Perfect Place For Your Meetings. What Are You Waiting For?</string>
+    <string name="consultancy">Consultancy</string>
+    <string name="consultancy_desc">A perfect consultancy office is what you need to give the best to your clients</string>
+    <string name="contact">Contact</string>
+    <string name="social">Social</string>
+    <string name="payments">Payments</string>
+    <string name="help">Help</string>
+    <string name="innovation">Innovation</string>
+    <string name="plans">Plans</string>
+    <string name="account">Account</string>
+    <string name="gallery">Gallery</string>
+    <string name="about_us">About Us</string>
+</resources>
