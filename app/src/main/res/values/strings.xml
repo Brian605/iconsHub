@@ -29,4 +29,6 @@
     <string name="account">Account</string>
     <string name="gallery">Gallery</string>
     <string name="about_us">About Us</string>
+    <string name="icons_co_working">iCONS HUB Co-Working</string>
+    <string name="co_working_explanation">Whether you have a team of 2 or 200,iconsHub keeps everyone on the same page</string>
 </resources>

@@ -13,4 +13,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">@color/icons_2</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style parent="Theme.MaterialComponents.Light.Dialog" name="Theme.IconsHub.FullScreenDialog">
+    <item name="android:windowIsFloating">false</item>
+    <item name="android:windowBackground">@color/white</item>
+    <item name="android:statusBarColor">@color/white</item>
+</style>
+
+    <style name="Theme.IconsHub.Slide">
+
+    <item name="android:windowEnterAnimation">@anim/animin</item>
+
+    <item name="android:windowExitAnimation">@anim/animout</item>
+
+</style>
 </resources>
