@@ -2,13 +2,17 @@ package org.icons.iconshub;
 
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ViewFlipper;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.appbar.MaterialToolbar;
+
+import org.icons.iconshub.fragments.CoWorkingDialog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -45,5 +49,11 @@ public class MainActivity extends AppCompatActivity {
         return super.onCreateOptionsMenu(menu);
     }
 
-
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId()==R.id.menu_co_working){
+            CoWorkingDialog.showDialog(getSupportFragmentManager());
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

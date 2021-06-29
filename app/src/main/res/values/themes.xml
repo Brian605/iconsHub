@@ -17,7 +17,7 @@
     <style parent="Theme.MaterialComponents.Light.Dialog" name="Theme.IconsHub.FullScreenDialog">
     <item name="android:windowIsFloating">false</item>
     <item name="android:windowBackground">@color/white</item>
-    <item name="android:statusBarColor">@color/white</item>
+   ` <item name="android:statusBarColor">@color/white</item>
 </style>
 
     <style name="Theme.IconsHub.Slide">
