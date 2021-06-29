@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 
 import org.icons.iconshub.fragments.CoWorkingDialog;
+import org.icons.iconshub.fragments.InnovationDialog;
+import org.icons.iconshub.fragments.PlansDialog;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -53,7 +55,14 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if (item.getItemId()==R.id.menu_co_working){
             CoWorkingDialog.showDialog(getSupportFragmentManager());
-        }
+        }else
+            if(item.getItemId()==R.id.menu_innovation){
+                InnovationDialog.showDialog(getSupportFragmentManager());
+            }
+         else
+             if (item.getItemId()==R.id.menu_plans){
+                 PlansDialog.showDialog(getSupportFragmentManager());
+             }
         return super.onOptionsItemSelected(item);
     }
 }

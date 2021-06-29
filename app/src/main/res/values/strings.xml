@@ -31,4 +31,16 @@
     <string name="about_us">About Us</string>
     <string name="icons_co_working">iCONS HUB Co-Working</string>
     <string name="co_working_explanation">Whether you have a team of 2 or 200,iconsHub keeps everyone on the same page</string>
+    <string name="innovation_explanation">innovation centre dedicated to accelerating the application of social capital and technology for economic prosperity</string>
+    <string name="starter">Starter</string>
+    <string name="ksh_3000_month">Ksh.3000/Month</string>
+    <string name="starter_explanation">Free internet access <br></br> Limited Access to computers and workspace <br></br> No access to offices and boardrooms</string>
+    <string name="ksh_5000_month">Ksh.5000/Month</string>
+    <string name="basic">Basic</string>
+    <string name="basic_explanation">High Speed internet <br></br> Unlimited Access to computers and workspace <br></br> Up to 4 hours access to offices and boardrooms per day</string>
+    <string name="ultimate">Ultimate</string>
+    <string name="ksh_10000_month">Ksh.10000/Month</string>
+    <string name="ultimate_explanation">Uninterrupted High Speed Internet <br></br> Unlimited Access to computers and workspace <br></br> Unlimited access to offices and boardrooms </string>
+
+
 </resources>
