@@ -4,43 +4,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:fitsSystemWindows="true">
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:background="@color/white"
-        android:fitsSystemWindows="true"
-        >
+        android:fitsSystemWindows="true">
 
-    <com.google.android.material.appbar.CollapsingToolbarLayout
+        <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fitsSystemWindows="true"
             app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
-        app:titleEnabled="false"
-        app:title="">
+
+            app:title=" ">
 
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/hub_logo"
-                android:contentDescription="@string/iconshub_logo"
                 android:layout_margin="10dp"
-                app:layout_collapseMode="parallax"/>
+                android:contentDescription="@string/iconshub_logo"
+                android:src="@drawable/hub_logo"
+                app:layout_collapseMode="parallax" />
 
-        <com.google.android.material.appbar.MaterialToolbar
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="@android:color/transparent"
-            app:layout_collapseMode="pin"
-            android:id="@+id/toolBar"
-            app:title=""
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolBar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
 
-            />
+                />
 
         </com.google.android.material.appbar.CollapsingToolbarLayout>
     </com.google.android.material.appbar.AppBarLayout>
+
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,203 +50,216 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-        <ViewFlipper
-            android:layout_width="match_parent"
-            android:layout_height="300dp"
-            android:layout_marginTop="10dp"
-            android:id="@+id/flipper">
-            <RelativeLayout
+            <ViewFlipper
+                android:id="@+id/flipper"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/slider_image"
-                    android:src="@drawable/slider_1"
-                    android:scaleType="fitXY"
-                    android:id="@+id/sliderImage1"
-                    android:adjustViewBounds="true"/>
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:text="@string/slider_1_description"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-                    android:padding="10dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:background="@drawable/slider_description_bg"
-                    />
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/icons_2"
-                    android:text="@string/subscribe"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    app:cornerRadius="20dp"
-                    android:textColor="@color/white"
-                    app:iconGravity="textEnd"
-                    app:iconTint="@color/white"
-                    android:padding="5dp"
-                    android:layout_marginBottom="10dp"
-                    app:iconPadding="5dp"
-                    android:id="@+id/btnSubscribe1"
-                    app:icon="@drawable/arrow_top_right_thin_circle_outline"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
-            </RelativeLayout>
+                android:layout_height="300dp"
+                android:layout_marginTop="10dp">
 
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageView
+                <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/slider_image"
-                    android:src="@drawable/slider_2"
-                    android:scaleType="fitXY"
-                    android:id="@+id/sliderImage2"
-                    android:adjustViewBounds="true"/>
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="310dp"
-                    android:text="@string/slider_2_description"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-                    android:padding="10dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:background="@drawable/slider_description_bg"
-                    />
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/icons_2"
-                    android:text="@string/subscribe"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    app:cornerRadius="20dp"
-                    android:textColor="@color/white"
-                    app:iconGravity="textEnd"
-                    app:iconTint="@color/white"
-                    android:padding="5dp"
-                    android:layout_marginBottom="10dp"
-                    app:iconPadding="5dp"
-                    android:id="@+id/btnSubscribe2"
-                    app:icon="@drawable/arrow_top_right_thin_circle_outline"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
-            </RelativeLayout>
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:contentDescription="@string/slider_image"
-                    android:src="@drawable/slider_3"
-                    android:scaleType="fitXY"
-                    android:id="@+id/sliderImage3"
-                    android:adjustViewBounds="true"/>
-                <com.google.android.material.textview.MaterialTextView
-                    android:layout_width="match_parent"
-                    android:layout_height="310dp"
-                    android:text="@string/slider_3_description"
-                    android:textColor="@color/white"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
-                    android:padding="10dp"
-                    android:gravity="center"
-                    android:textStyle="bold"
-                    android:background="@drawable/slider_description_bg"
-                    />
-                <com.google.android.material.button.MaterialButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:backgroundTint="@color/icons_2"
-                    android:text="@string/subscribe"
-                    android:layout_alignParentBottom="true"
-                    android:layout_centerHorizontal="true"
-                    app:cornerRadius="20dp"
-                    android:textColor="@color/white"
-                    app:iconGravity="textEnd"
-                    app:iconTint="@color/white"
-                    android:padding="5dp"
-                    android:layout_marginBottom="10dp"
-                    app:iconPadding="5dp"
-                    android:id="@+id/btnSubscribe3"
-                    app:icon="@drawable/arrow_top_right_thin_circle_outline"
-                    android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
-            </RelativeLayout>
+                    android:layout_height="match_parent">
 
-        </ViewFlipper>
+                    <ImageView
+                        android:id="@+id/sliderImage1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/slider_image"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/slider_1" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/slider_description_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/slider_1_description"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSubscribe1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/icons_2"
+                        android:padding="5dp"
+                        android:text="@string/subscribe"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/arrow_top_right_thin_circle_outline"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="5dp"
+                        app:iconTint="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/sliderImage2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/slider_image"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/slider_2" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:background="@drawable/slider_description_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/slider_2_description"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSubscribe2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/icons_2"
+                        android:padding="5dp"
+                        android:text="@string/subscribe"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/arrow_top_right_thin_circle_outline"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="5dp"
+                        app:iconTint="@color/white" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/sliderImage3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/slider_image"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/slider_3" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="310dp"
+                        android:background="@drawable/slider_description_bg"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="@string/slider_3_description"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btnSubscribe3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="10dp"
+                        android:backgroundTint="@color/icons_2"
+                        android:padding="5dp"
+                        android:text="@string/subscribe"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                        android:textColor="@color/white"
+                        app:cornerRadius="20dp"
+                        app:icon="@drawable/arrow_top_right_thin_circle_outline"
+                        app:iconGravity="textEnd"
+                        app:iconPadding="5dp"
+                        app:iconTint="@color/white" />
+                </RelativeLayout>
+
+            </ViewFlipper>
 
             <include
-                layout="@layout/service_cards_layout_1"
-                android:layout_below="@+id/flipper"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:id="@+id/include1"
-                android:layout_margin="10dp"/>
-            <include
-                layout="@layout/service_cards_layout_2"
-                android:layout_below="@+id/include1"
+                layout="@layout/service_cards_layout_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/flipper"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include2"
-                android:layout_margin="10dp"/>
-            <include
-                layout="@layout/service_cards_layout_3"
-                android:layout_margin="10dp"
+                layout="@layout/service_cards_layout_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/include1"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include3"
-                android:layout_below="@+id/include2"/>
-            <include
-                layout="@layout/service_cards_layout_4"
-                android:layout_margin="10dp"
+                layout="@layout/service_cards_layout_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/include2"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include4"
-                android:layout_below="@+id/include3"/>
-            <include
-                layout="@layout/service_cards_layout_5"
-                android:layout_margin="10dp"
+                layout="@layout/service_cards_layout_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/include3"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include5"
-                android:layout_below="@+id/include4"/>
-            <include
-                layout="@layout/service_cards_layout_6"
-                android:layout_margin="10dp"
+                layout="@layout/service_cards_layout_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/include4"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include6"
-                android:layout_below="@+id/include5"/>
-            <include
-                layout="@layout/service_cards_layout_7"
-                android:layout_margin="10dp"
+                layout="@layout/service_cards_layout_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_below="@+id/include5"
+                android:layout_margin="10dp" />
+
+            <include
                 android:id="@+id/include7"
-                android:layout_below="@+id/include6"/>
+                layout="@layout/service_cards_layout_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/include6"
+                android:layout_margin="10dp" />
 
         </RelativeLayout>
 
     </androidx.core.widget.NestedScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        app:elevation="10dp"
-        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
-        android:id="@+id/bottomNav"
         app:backgroundTint="@color/icons_4"
-        app:menu="@menu/bottom_navigation_menu"
+        app:elevation="10dp"
         app:itemIconTint="@color/bottom_navigation_colors"
-        app:itemTextColor="@color/bottom_navigation_colors"
         app:itemTextAppearanceActive="@style/TextAppearance.MaterialComponents.Headline6"
         app:itemTextAppearanceInactive="@style/TextAppearance.MaterialComponents.Body1"
+        app:itemTextColor="@color/bottom_navigation_colors"
         app:labelVisibilityMode="labeled"
-        />
+        app:layout_behavior="com.google.android.material.behavior.HideBottomViewOnScrollBehavior"
+        app:menu="@menu/bottom_navigation_menu" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:navigationIcon="@drawable/ic_baseline_arrow_back_black"
+        app:title="@string/social_string" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/twitter"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/twitter" />
+
+    <TextView
+        android:id="@+id/twitterText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/twitter"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/twitter"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/linkden"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/toolBar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/linkedin" />
+
+    <TextView
+        android:id="@+id/linkedIntext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linkden"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/linkedin"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/facebook"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/twitterText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/facebook" />
+
+    <TextView
+        android:id="@+id/facebookText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/facebook"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/facebook"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/instagram"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/linkedIntext"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/instagram" />
+
+    <TextView
+        android:id="@+id/igText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/instagram"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/instagram"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/whatsup"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/facebookText"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/whatsapp" />
+
+    <TextView
+        android:id="@+id/whatsappText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/whatsup"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/whatsapp"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/website"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/igText"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="10dp"
+        android:src="@drawable/web" />
+
+    <TextView
+        android:id="@+id/linkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/website"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/website"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

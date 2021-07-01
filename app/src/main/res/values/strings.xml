@@ -34,13 +34,29 @@
     <string name="innovation_explanation">innovation centre dedicated to accelerating the application of social capital and technology for economic prosperity</string>
     <string name="starter">Starter</string>
     <string name="ksh_3000_month">Ksh.3000/Month</string>
-    <string name="starter_explanation">Free internet access <br></br> Limited Access to computers and workspace <br></br> No access to offices and boardrooms</string>
+    <string name="starter_explanation">Free internet access <br /> Limited Access to computers and workspace <br /> No access to offices and boardrooms</string>
     <string name="ksh_5000_month">Ksh.5000/Month</string>
     <string name="basic">Basic</string>
-    <string name="basic_explanation">High Speed internet <br></br> Unlimited Access to computers and workspace <br></br> Up to 4 hours access to offices and boardrooms per day</string>
+    <string name="basic_explanation">High Speed internet <br /> Unlimited Access to computers and workspace <br /> Up to 4 hours access to offices and boardrooms per day</string>
     <string name="ultimate">Ultimate</string>
     <string name="ksh_10000_month">Ksh.10000/Month</string>
-    <string name="ultimate_explanation">Uninterrupted High Speed Internet <br></br> Unlimited Access to computers and workspace <br></br> Unlimited access to offices and boardrooms </string>
+    <string name="ultimate_explanation">Uninterrupted High Speed Internet <br /> Unlimited Access to computers and workspace <br /> Unlimited access to offices and boardrooms </string>
+    <string name="about_us_explanation">A place where all ideas have the potential of becoming great companies!<br /> Our love to see entrepreneurs succeed has enabled us to create a place where ideas can thrive and achieve their potential.<br /> Furthermore, we organize incubation and training programs for entrepreneurs and young professionals. Here you’ll get unlimited access to mentorship and skills training.<br /> We pride ourselves for having diversity. Our network is so rich that you can join with just the idea but assured that you will exit with both the knowledge, skills, network and the business itself. This makes a one-stop center for entrepreneurship.<br /> Get the chance to engage with our developing communities of; <br />Young professionals <br />Mentors Entrepreneurs <br />Startup Companies</string>
+    <string name="social_string">Icons Social</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="linkedin">LinkedIn</string>
+    <string name="instagram">Instagram</string>
+    <string name="whatsapp">Whatsapp</string>
+    <string name="website">Website</string>
+    <string name="home">Home</string>
+    <string name="frequently_asked_questions">Frequently Asked Questions</string>
+    <string name="dummy_explanation">To join us , you can register for free from our app\'s account page or by going to our website https://iconshub.co.ke and clicking or the account menu. You will be prompted to fill a registration form</string>
+    <string name="dummy_question">How can i join icons hub?</string>
+    <string name="faq3">Account activation for those who register using the app is instantaneous.
+            However, you might experience slight delays if you register from the
+            website but it wont take more than 4  hours. If you\'re subscribing for
+            a new package, it will be activated in 10 minute\'s time</string>
 
 
 </resources>

@@ -32,9 +32,9 @@ public class InnovationDialog extends DialogFragment {
     GalleryAdapter adapter;
     List<Integer> imagesList;
 
-    public static void showDialog(FragmentManager manager){
-    InnovationDialog dialog=new InnovationDialog();
-        dialog.show(manager,"innovation");
+    public static void showDialog(FragmentManager manager) {
+        InnovationDialog dialog = new InnovationDialog();
+        dialog.show(manager, "innovation");
     }
 
     @Override
@@ -46,34 +46,33 @@ public class InnovationDialog extends DialogFragment {
     @Override
     public void onStart() {
         super.onStart();
-        Dialog dialog=getDialog();
-        if (dialog!=null){
-            int width= ViewGroup.LayoutParams.MATCH_PARENT;
-            int height=ViewGroup.LayoutParams.MATCH_PARENT;
-            dialog.getWindow().setLayout(width,height);
+        Dialog dialog = getDialog();
+        if (dialog != null) {
+            int width = ViewGroup.LayoutParams.MATCH_PARENT;
+            int height = ViewGroup.LayoutParams.MATCH_PARENT;
+            dialog.getWindow().setLayout(width, height);
             dialog.getWindow().setWindowAnimations(R.style.Theme_IconsHub_Slide);
         }
     }
 
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.innovation_layout,container,false);
-        recyclerView=view.findViewById(R.id.recycler);
-        toolbar=view.findViewById(R.id.toolBar);
-        fab=view.findViewById(R.id.btnSubscribe);
+        View view = inflater.inflate(R.layout.innovation_layout, container, false);
+        recyclerView = view.findViewById(R.id.recycler);
+        toolbar = view.findViewById(R.id.toolBar);
+        fab = view.findViewById(R.id.btnSubscribe);
 
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(),2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getActivity(), 2));
 
-imagesList=new ArrayList<>();
-imagesList.addAll(Arrays.asList(R.drawable.c1,R.drawable.c2,R.drawable.c3,R.drawable.c3));
+        imagesList = new ArrayList<>();
+        imagesList.addAll(Arrays.asList(R.drawable.c1, R.drawable.c2, R.drawable.c3, R.drawable.c3));
 
-        adapter=new GalleryAdapter(getActivity(),imagesList);
+        adapter = new GalleryAdapter(getActivity(), imagesList);
 
-return view;
+        return view;
     }
 
     @Override

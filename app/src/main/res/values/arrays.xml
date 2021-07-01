@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="faq_questions">
+        <item>@string/dummy_question</item>
+        <item>Can I join for free?</item>
+        <item>How Long Will it take to activate my account</item>
+        <item>I am a student, can i still join iCONS HUB?</item>
+        <item>Which Plans are Currently Available?</item>
+    </string-array>
+
+    <string-array name="faq_answers">
+        <item>@string/dummy_explanation</item>
+        <item>Yes you can. At iCONS HUB, its free to register. You will only pay to use some of our services. We also have free sponsored packages which allows one to use our resources freely for a limited time frame daily</item>
+        <item>@string/faq3</item>
+        <item>iCONS HUb consist of mentors who are willing to mentor students and young entrepreneurs into productive innovators  and consultants</item>
+        <item>We currently have 3 plans,the Starter(Ksh.3000/Month) the Basic(Ksh.5000/Month) and the Ultimate plan(Ksh.10000/Month) . We also allow the pay as you go plan which is Ksh.3 per minute </item>
+    </string-array>
+</resources>

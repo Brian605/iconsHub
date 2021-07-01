@@ -25,10 +25,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
-        debug{
+        debug {
             firebaseAppDistribution {
-                releaseNotesFile="Initial App"
-                testers="returnzero41@gmail.com"
+                releaseNotesFile = "Initial App"
+                testers = "returnzero41@gmail.com"
             }
         }
     }

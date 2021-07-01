@@ -18,7 +18,7 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class GalleryAdapter  extends  RecyclerView.Adapter<GalleryAdapter.ImageHolder>{
+public class GalleryAdapter extends RecyclerView.Adapter<GalleryAdapter.ImageHolder> {
 
     private Context context;
     private List<Integer> imageId;
@@ -32,13 +32,13 @@ public class GalleryAdapter  extends  RecyclerView.Adapter<GalleryAdapter.ImageH
     @NotNull
     @Override
     public ImageHolder onCreateViewHolder(@NonNull @NotNull ViewGroup parent, int viewType) {
-        View view= LayoutInflater.from(context).inflate(R.layout.image_item,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.image_item, parent, false);
         return new ImageHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull @NotNull GalleryAdapter.ImageHolder holder, int position) {
-        int id=imageId.get(position);
+        int id = imageId.get(position);
         holder.imageView.setImageResource(id);
 
     }
@@ -48,7 +48,7 @@ public class GalleryAdapter  extends  RecyclerView.Adapter<GalleryAdapter.ImageH
         return imageId.size();
     }
 
-    static class ImageHolder extends  RecyclerView.ViewHolder{
+    static class ImageHolder extends RecyclerView.ViewHolder {
 
         @BindView(R2.id.imagView)
         ImageView imageView;
@@ -56,7 +56,7 @@ public class GalleryAdapter  extends  RecyclerView.Adapter<GalleryAdapter.ImageH
 
         public ImageHolder(@NonNull @NotNull View itemView) {
             super(itemView);
-            ButterKnife.bind(this,itemView);
+            ButterKnife.bind(this, itemView);
 
         }
     }

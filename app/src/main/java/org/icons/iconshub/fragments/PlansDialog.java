@@ -20,9 +20,10 @@ public class PlansDialog extends DialogFragment {
 
 
     MaterialToolbar toolbar;
-    public static void showDialog(FragmentManager manager){
-    PlansDialog dialog=new PlansDialog();
-        dialog.show(manager,"Co Working");
+
+    public static void showDialog(FragmentManager manager) {
+        PlansDialog dialog = new PlansDialog();
+        dialog.show(manager, "Co Working");
     }
 
     @Override
@@ -34,24 +35,23 @@ public class PlansDialog extends DialogFragment {
     @Override
     public void onStart() {
         super.onStart();
-        Dialog dialog=getDialog();
-        if (dialog!=null){
-            int width= ViewGroup.LayoutParams.MATCH_PARENT;
-            int height=ViewGroup.LayoutParams.MATCH_PARENT;
-            dialog.getWindow().setLayout(width,height);
+        Dialog dialog = getDialog();
+        if (dialog != null) {
+            int width = ViewGroup.LayoutParams.MATCH_PARENT;
+            int height = ViewGroup.LayoutParams.MATCH_PARENT;
+            dialog.getWindow().setLayout(width, height);
             dialog.getWindow().setWindowAnimations(R.style.Theme_IconsHub_Slide);
         }
     }
 
 
-
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view=inflater.inflate(R.layout.plans_layout,container,false);
-        toolbar=view.findViewById(R.id.toolBar);
+        View view = inflater.inflate(R.layout.plans_layout, container, false);
+        toolbar = view.findViewById(R.id.toolBar);
 
-return view;
+        return view;
     }
 
     @Override

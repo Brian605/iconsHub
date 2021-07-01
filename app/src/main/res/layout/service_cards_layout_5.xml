@@ -3,62 +3,66 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardBackgroundColor="@color/white"
     android:layout_margin="5dp"
-    app:cardElevation="7dp"
-    app:cardCornerRadius="10dp">
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="7dp">
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <com.google.android.material.textview.MaterialTextView
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_orange"
             android:drawableEnd="@drawable/palm_tree"
             android:elevation="7dp"
-            android:background="@drawable/bg_orange"
-            android:layout_alignParentEnd="true"
             android:gravity="center"
-            android:paddingEnd="10dp"
             android:paddingStart="10dp"
-            android:layout_margin="5dp"/>
+            android:paddingEnd="10dp" />
+
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cardTitle5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:ems="10"
+            android:text="@string/garden_and_recreation"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
-            android:textStyle="bold"
-            android:id="@+id/cardTitle5"
-            android:text="@string/garden_and_recreation"/>
+            android:textStyle="bold" />
+
         <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cardDesc5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/garden_desc"
             android:layout_below="@+id/cardTitle5"
-            android:layout_marginEnd="100dp"
             android:layout_marginStart="10dp"
+            android:layout_marginEnd="100dp"
             android:ems="10"
-            android:id="@+id/cardDesc5"
             android:padding="10dp"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"/>
+            android:text="@string/garden_desc"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetStarted5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/icons_2"
-            android:text="@string/subscribe"
             android:layout_below="@+id/cardDesc5"
-            app:cornerRadius="20dp"
-            android:textColor="@color/white"
-            app:iconGravity="textEnd"
-            app:iconTint="@color/white"
-            android:padding="5dp"
-            android:layout_marginBottom="10dp"
-            app:iconPadding="5dp"
-            android:id="@+id/btnGetStarted5"
             android:layout_margin="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/icons_2"
+            android:padding="5dp"
+            android:text="@string/subscribe"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+            android:textColor="@color/white"
+            app:cornerRadius="20dp"
             app:icon="@drawable/arrow_top_right_thin_circle_outline"
-            android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"/>
+            app:iconGravity="textEnd"
+            app:iconPadding="5dp"
+            app:iconTint="@color/white" />
 
     </RelativeLayout>
 
