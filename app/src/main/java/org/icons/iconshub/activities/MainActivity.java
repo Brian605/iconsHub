@@ -1,5 +1,6 @@
-package org.icons.iconshub;
+package org.icons.iconshub.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -12,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import org.icons.iconshub.R;
+import org.icons.iconshub.R2;
 import org.icons.iconshub.fragments.AboutDialog;
 import org.icons.iconshub.fragments.CoWorkingDialog;
 import org.icons.iconshub.fragments.HelpsDialog;
@@ -86,6 +89,10 @@ public class MainActivity extends AppCompatActivity {
         } else if (item.getItemId() == R.id.menu_about) {
             AboutDialog.showDialog(getSupportFragmentManager());
         }
+        else
+            if (item.getItemId()==R.id.menu_account){
+              startActivity(new Intent(MainActivity.this,AuthActivity.class));
+            }
         return super.onOptionsItemSelected(item);
     }
 }

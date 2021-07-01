@@ -1,6 +1,7 @@
 package org.icons.iconshub.fragments;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,8 +12,11 @@ import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.google.android.gms.oss.licenses.OssLicensesMenuActivity;
 import com.google.android.material.appbar.MaterialToolbar;
+import com.google.android.material.textview.MaterialTextView;
 
+import org.icons.iconshub.BuildConfig;
 import org.icons.iconshub.R;
 import org.icons.iconshub.adapters.FaqsAdapter;
 import org.jetbrains.annotations.NotNull;
@@ -24,6 +28,8 @@ public class HelpsDialog extends DialogFragment {
     MaterialToolbar toolbar;
    RecyclerView recyclerView;
    FaqsAdapter adapter;
+   MaterialTextView vValue,licencesView;
+
 
 
     public static void showDialog(FragmentManager manager) {
@@ -54,6 +60,9 @@ public class HelpsDialog extends DialogFragment {
         View view = inflater.inflate(R.layout.help_layout, container, false);
         toolbar = view.findViewById(R.id.toolBar);
         recyclerView=view.findViewById(R.id.recycler);
+        vValue=view.findViewById(R.id.versionValue);
+        licencesView=view.findViewById(R.id.licencesTitle);
+
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
 
@@ -74,6 +83,15 @@ public class HelpsDialog extends DialogFragment {
             }
         });
 
+        licencesView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), OssLicensesMenuActivity.class));
+                dismiss();
+            }
+        });
+
+        vValue.setText(String.format("%s(%s)", BuildConfig.VERSION_NAME, BuildConfig.BUILD_TYPE));
         recyclerView.setAdapter(adapter);
 
     }

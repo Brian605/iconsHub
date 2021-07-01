@@ -39,6 +39,7 @@
         android:id="@+id/faqBody"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:visibility="gone"
         android:layout_below="@+id/header">
 
         <com.google.android.material.textview.MaterialTextView
@@ -48,6 +49,7 @@
             android:layout_margin="7dp"
             android:linksClickable="true"
             android:padding="5dp"
+            android:autoLink="all"
             android:text="@string/dummy_explanation"
             android:textAppearance="@style/TextAppearance.MaterialComponents.Body1"
             android:textColorLink="@color/icons_2" />

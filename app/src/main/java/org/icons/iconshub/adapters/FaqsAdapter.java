@@ -93,9 +93,6 @@ holder.bodyLayout.setVisibility(View.GONE);
           @BindView(R2.id.header)
         RelativeLayout headerLayout;
 
-          @BindView(R2.id.recycler)
-          RecyclerView recyclerView;
-
           @BindView(R2.id.faqBody)
           RelativeLayout bodyLayout;
 
